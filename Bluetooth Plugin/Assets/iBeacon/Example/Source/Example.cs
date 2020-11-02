@@ -496,7 +496,7 @@ internal class Example : MonoBehaviour {
 		double D2 = mybeacons[1].accuracy;
 		double D3 = mybeacons[2].accuracy;
 
-        float U = P2.x; //x value of position 2
+        float U = P2.x; //x value of position 2 //Y value of position 2 is always 0
 
         float vX = p3.x; //x value of position 3
         float vY = p3.y; //y value of position 3
