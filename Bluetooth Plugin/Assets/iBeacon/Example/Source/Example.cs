@@ -482,7 +482,7 @@ internal class Example : MonoBehaviour {
 
     public void Show()
     {
-        print(mybeacons[0].accuracy);
+        print(mybeacons[0].accuracy);  
     }
 
 
