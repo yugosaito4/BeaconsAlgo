@@ -496,12 +496,16 @@ internal class Example : MonoBehaviour {
 		double D2 = mybeacons[1].accuracy;
 		double D3 = mybeacons[2].accuracy;
 
+        float U = P2.x; //x value of position 2
 
-		userX = (float)(((D1 * D1) - (D2 * D2) + (P2.x * P2.x)) / (2 * P2.x)); //Output for X position of User
+        float vX = p3.x; //x value of position 3
+        float vY = p3.y; //y value of position 3
 
-		float V2 = (p3.x * p3.x) + (p3.y * p3.y); // pythygoras theorem for Position 3
+        userX = (float)(((D1 * D1) - (D2 * D2) + (U * U)) / (2 * U)); //Output for X position of User
 
-        userY =(float)((D1 * D1) - (D3 * D3) + (V2) - (2 * p3.x * userX)) / (2 * p3.y); //Output for y position of User
+		float V2 = (vX * vX) + (vY * vY); // pythygoras theorem for Position 3
+
+        userY = (float)(((D1 * D1) - (D3 * D3) + V2 - (2 * vX * userX)) / (2 * vY)); //Output for y position of User
 
 		Vector2 userPos = new Vector2(userX, userY); // get the vector 2 position of user
 
