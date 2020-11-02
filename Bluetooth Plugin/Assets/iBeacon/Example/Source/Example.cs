@@ -485,7 +485,7 @@ internal class Example : MonoBehaviour {
         print(mybeacons[0].accuracy);  
     }
 
-
+ 
 	public void Trilaterate() // trilateration algorithm
     {
 		//X and Y float value of user's position 
@@ -501,7 +501,7 @@ internal class Example : MonoBehaviour {
 
 		float V2 = (p3.x * p3.x) + (p3.y * p3.y); // pythygoras theorem for Position 3
 
-		userY =(float)((D1 * D1) - (D3 * D3) + (V2) - (2 * p3.x * userX)) / (2 * p3.y); //Output for y position of User
+        userY =(float)((D1 * D1) - (D3 * D3) + (V2) - (2 * p3.x * userX)) / (2 * p3.y); //Output for y position of User
 
 		Vector2 userPos = new Vector2(userX, userY); // get the vector 2 position of user
 
@@ -539,7 +539,6 @@ internal class Example : MonoBehaviour {
 			foreach (Text t in Texts)
 				t.text = "";
 
-			
 
 			switch (b.type) {
 			case BeaconType.iBeacon:
