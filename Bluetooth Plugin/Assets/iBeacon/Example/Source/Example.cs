@@ -488,8 +488,8 @@ internal class Example : MonoBehaviour {
  
 	public void Trilaterate() // trilateration algorithm
     {
-		//X and Y float value of user's position 
-		float userX, userY;
+        //X and Y float value of user's position 
+        float userX, userY; //userZ
 
 		//distance between user and beacons a.k.a radius of beacons circluar strength
 		double D1 = mybeacons[0].accuracy; //D is distance radius 
@@ -506,6 +506,21 @@ internal class Example : MonoBehaviour {
 		float V2 = (vX * vX) + (vY * vY); // pythygoras theorem for Position 3
 
         userY = (float)(((D1 * D1) - (D3 * D3) + V2 - (2 * vX * userX)) / (2 * vY)); //Output for y position of User
+
+        //Z value (not in use)
+
+        //float productZ; // get the value of Z product before sqrt
+
+        //productZ = (float)(D1 * D1) - (userX * userX) - (userY * userY);
+
+        //if(productZ < 0) // check if Z product is negative
+        //{
+        //    productZ = productZ * -1; //if yes , make it positive
+        //}
+
+        //userZ = (float)(Math.Sqrt(productZ));
+
+       
 
 		Vector2 userPos = new Vector2(userX, userY); // get the vector 2 position of user
 
