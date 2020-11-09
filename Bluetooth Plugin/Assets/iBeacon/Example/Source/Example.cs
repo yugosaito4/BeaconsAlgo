@@ -111,7 +111,7 @@ internal class Example : MonoBehaviour {
 
 	[Header("Beacons Position")]
 
-	public Vector2 P1 = new Vector2(0, 0);
+	public Vector2 P1 = new Vector2(0, 0); // should be (0,0) by default
 	public Vector2 P2 = new Vector2(0, 0);
 	public Vector2 p3 = new Vector2(0, 0);
 
@@ -508,7 +508,6 @@ internal class Example : MonoBehaviour {
         userY = (float)(((D1 * D1) - (D3 * D3) + V2 - (2 * vX * userX)) / (2 * vY)); //Output for y position of User
 
         //Z value (not in use)
-
         //float productZ; // get the value of Z product before sqrt
 
         //productZ = (float)(D1 * D1) - (userX * userX) - (userY * userY);
