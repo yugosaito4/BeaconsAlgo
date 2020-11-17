@@ -521,7 +521,7 @@ internal class Example : MonoBehaviour {
 
        
 
-		Vector2 userPos = new Vector2(userX, userY); // get the vector 2 position of user
+		Vector2 userPos = new Vector2(userX , userY);
 
 		print(userPos);
 	}
