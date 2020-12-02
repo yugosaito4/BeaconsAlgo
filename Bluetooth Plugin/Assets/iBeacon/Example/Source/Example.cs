@@ -492,7 +492,7 @@ internal class Example : MonoBehaviour {
         float userX, userY; //userZ
 
 		//distance between user and beacons a.k.a radius of beacons circluar strength
-		double D1 = mybeacons[0].accuracy; //D is distance radius 
+		double D1 = mybeacons[0].accuracy;
 		double D2 = mybeacons[1].accuracy;
 		double D3 = mybeacons[2].accuracy;
 
@@ -507,7 +507,7 @@ internal class Example : MonoBehaviour {
 
         userY = (float)(((D1 * D1) - (D3 * D3) + V2 - (2 * vX * userX)) / (2 * vY)); //Output for y position of User
 
-        //Z value (not in use)
+        //Z value (if doing 3D trilaterion)
         //float productZ; // get the value of Z product before sqrt
 
         //productZ = (float)(D1 * D1) - (userX * userX) - (userY * userY);
